@@ -22,8 +22,8 @@ public class BanCoCaro extends JFrame {
 
 class CaroPanel extends JPanel {
 
-    int size = 10; // số ô mỗi hàng/cột
-    int[][] board = new int[size][size]; // 0: trống, 1: X, 2: O
+    int size = 10;
+    int[][] board = new int[size][size];
     boolean isXTurn = true; // lượt X trước
 
     public CaroPanel() {
