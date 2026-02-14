@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMIÈRE - Luxury Cosmetics</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ee2b6c",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221016",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fcf8f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e5d0d6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ee2b6c;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b0d12] dark:text-[#f3e7eb] font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-[#f3e7eb] dark:border-[#3a2028] bg-[#fcf8f9]/90 dark:bg-[#221016]/90 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 py-4 lg:px-12 xl:px-20 max-w-[1440px] mx-auto">
+<!-- Logo & Mobile Menu -->
+<div class="flex items-center gap-6">
+<button class="lg:hidden text-[#1b0d12] dark:text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<a class="flex items-center gap-3 group" href="#">
+<div class="size-8 text-primary">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C14 4 10 14 10 24C10 34 14 44 24 44C34 44 38 34 38 24C38 14 34 4 24 4ZM24 40C16 40 14 32 14 24C14 16 16 8 24 8C32 8 34 16 34 24C34 32 32 40 24 40Z" fill="currentColor" fill-opacity="0.2"></path>
+<path d="M24 14C19 14 18 19 18 24C18 29 19 34 24 34C29 34 30 29 30 24C30 19 29 14 24 14Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold tracking-tight text-[#1b0d12] dark:text-white group-hover:text-primary transition-colors">LUMIÈRE</h2>
+</a>
+</div>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors text-[#1b0d12] dark:text-[#e5d0d6]" href="#">Skincare</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-[#1b0d12] dark:text-[#e5d0d6]" href="#">Makeup</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-[#1b0d12] dark:text-[#e5d0d6]" href="#">Fragrance</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors text-[#1b0d12] dark:text-[#e5d0d6]" href="#">Sets</a>
+</nav>
+<!-- Utility Icons & Search -->
+<div class="flex items-center gap-4 lg:gap-6">
+<!-- Search Bar (Desktop) -->
+<div class="hidden md:flex items-center relative w-64 h-10">
+<input class="w-full h-full bg-[#f3e7eb] dark:bg-[#3a2028] border-none rounded-full pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary placeholder:text-[#9a4c66] dark:placeholder:text-[#cc8ba1] text-[#1b0d12] dark:text-white transition-all" placeholder="Search products..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 text-[#9a4c66] dark:text-[#cc8ba1] text-[20px]">search</span>
+</div>
+<!-- Icons -->
+<div class="flex items-center gap-3">
+<button class="md:hidden p-2 text-[#1b0d12] dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-2 text-[#1b0d12] dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="relative p-2 text-[#1b0d12] dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-1 right-0 bg-primary text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full">2</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden">
+<div class="layout-container flex flex-col items-center">
+<div class="w-full max-w-[1440px] px-4 md:px-8 py-6 lg:px-12">
+<div class="relative w-full rounded-2xl overflow-hidden min-h-[500px] md:min-h-[600px] flex items-center justify-start bg-cover bg-center" data-alt="Close up of a luxury amber serum bottle with water droplets on a dark textured background" style='background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0,0,0,0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8aTD6NcGbzr05jGJDBvhFvoDWcdNm5GhFl0pSS8yIoRwcyNmHL7ESgwvDMvaESbu9w6-uk1hqD5j-LJixYDWNlNhFdPD2JBTL-s9725rT-_R1ONcqGtJ-mh262BV48V1Wi2M_VCTjNJi5tDlXUWq1vxRb_BbbSBwUv_v_UFHQ3Y6srBeu0Dqn98KvrddCnVg10OW6apS60-4V89a8aMqelX5fQo9TCQ06Dr_iCT70kS896Xr6CZOxjawUjNW5noeezTb-d3JUzmlH");'>
+<div class="relative z-10 p-8 md:p-16 lg:p-24 flex flex-col items-start gap-6 max-w-2xl animate-fade-in-up">
+<span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider rounded-full border border-white/30">New Arrival</span>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight drop-shadow-sm">
+                                Radiance <br/><span class="text-[#ffb6c1]">Redefined.</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl font-medium max-w-[480px] leading-relaxed drop-shadow-sm">
+                                Experience the gold standard in anti-aging. Our new Vitamin C Serum restores your natural glow instantly.
+                            </p>
+<div class="flex gap-4 mt-2">
+<button class="h-12 px-8 bg-primary hover:bg-primary/90 text-white text-base font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-primary/30 flex items-center gap-2">
+                                    Shop Now
+                                </button>
+<button class="h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-base font-bold rounded-lg border border-white/30 transition-all flex items-center gap-2">
+                                    Learn More
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers Header -->
+<section class="pt-16 pb-8">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-3">Customer Favorites</span>
+<h2 class="text-[#1b0d12] dark:text-white text-3xl md:text-4xl font-bold mb-4">Best Sellers</h2>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="pb-20">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group flex flex-col gap-4">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-[#f3e7eb] dark:bg-[#3a2028]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Rose toner bottle surrounded by rose petals on a soft pink surface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_Cxedhf_wAOITIi2oYZtutt_HvdU_Ls3LUHYkoDlBRuf8-13w6MTmshngLuO1dAMmb_Ul8Ks7K4w7u0auZDuKbGeBUNN9eTNUn0pwk02JizFBjakQ0xQq20HWT67rfBNLw647MDqIDy26REXS706cv624IDE5Qj6qWTxc-uvCXaUiln_VodxgiXwAIG1InRWVge2Trg5rUiNDk2p-DeMKjoTEcDau_3_7PXSpjQPmmQOEs3fpI3avNq0bWbQIKdZRcLsjgBaq_XGF");'></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 w-[90%] bg-white dark:bg-[#221016] text-[#1b0d12] dark:text-white font-bold py-3 rounded-lg shadow-lg hover:bg-primary hover:text-white">
+                                Quick Add
+                            </button>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-black/60 backdrop-blur px-2 py-1 rounded text-xs font-bold text-[#1b0d12] dark:text-white">Best Seller</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold text-[#1b0d12] dark:text-white group-hover:text-primary transition-colors">Hydrating Rose Toner</h3>
+<span class="text-primary font-bold">$45.00</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-[18px] fill-1">star</span>
+<span class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">4.9 (120 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group flex flex-col gap-4">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-[#f3e7eb] dark:bg-[#3a2028]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Matte lipstick tube standing upright with swatch smear next to it" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVledUhMPyO6LkUXNW1w31qK27dqIqJhmfZj9NhKeCLyRt7k-UxCUAZBjcIF_kwQnfOlWxgBfWRa9pxkin5djUSdVqfJ65NltIjJnb98Xwe9sNHaVDngRSQiJs3cVGPKh0BZ3J4PpGZj5h_mxya5Yie7B_i3cS8QbiPHKD6yHL7eb9tBiKVjvDL33bi6SWIwjNiuQvR1tKUP5lR1CQS2wHlWlouS9nOjVhgl58B74qgiYktdbl8TqLbeJtwoA-0aKwVXOfvkO8Dr2n");'></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 w-[90%] bg-white dark:bg-[#221016] text-[#1b0d12] dark:text-white font-bold py-3 rounded-lg shadow-lg hover:bg-primary hover:text-white">
+                                Quick Add
+                            </button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold text-[#1b0d12] dark:text-white group-hover:text-primary transition-colors">Velvet Matte Lipstick</h3>
+<span class="text-primary font-bold">$32.00</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-[18px] fill-1">star</span>
+<span class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">4.5 (85 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group flex flex-col gap-4">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-[#f3e7eb] dark:bg-[#3a2028]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Golden face oil bottle with dropper on a reflective surface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA__II-oYcic9sGMjXf-t6ecje8VDwWxaQbBMpnzoc8zHACiAiPNg7ioKMT3-W5RZqOpAOZESnUfldnJ1I3z-LfEk8bVGv1z83iGBycF5AdMnCTwVbc75_0jjgqrZ4egoTh-vk1FnY69cS2gbMDlazHNpSwetBxSd3vG6EB5aVNYJh_RO5679o0HtilsATm_Uz5n_vKYblJBe7-00a12h1hsXpCLb2tigMJbMKalqJ9uFxCvc8PgRuBE9zNJly4zrNKikYqfw2Ab6pZ");'></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 w-[90%] bg-white dark:bg-[#221016] text-[#1b0d12] dark:text-white font-bold py-3 rounded-lg shadow-lg hover:bg-primary hover:text-white">
+                                Quick Add
+                            </button>
+<div class="absolute top-3 left-3 bg-primary text-white px-2 py-1 rounded text-xs font-bold">New</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold text-[#1b0d12] dark:text-white group-hover:text-primary transition-colors">Night Repair Oil</h3>
+<span class="text-primary font-bold">$85.00</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-[18px] fill-1">star</span>
+<span class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">5.0 (310 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group flex flex-col gap-4">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-[#f3e7eb] dark:bg-[#3a2028]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="White tube of sunscreen on sand with a seashell prop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnV4wsYc8fGjHlMgmbnj8i4NW7bhY35sD8kPXLUH4w4PeoMb1X5iULKUyt4ExANZKsoO_cIdwUuyOXGIapf4RS4MlNjUXm7cqBlWMjj8fFOfG5x7y1CV4ONtOWMum1_L97Cxh2hzqLPi9zQw4XQMSpvO6wuQwkt-Yz6Zd-lnvSVNhI-3_bF0iwFvj8iC92nNMMTgUO9lttTysJ9hlSjNRVDXRMZj89UH2LeVYsxAetpELMokKY11F3OK__IVagW_SF0TMlgkEppqlA");'></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 w-[90%] bg-white dark:bg-[#221016] text-[#1b0d12] dark:text-white font-bold py-3 rounded-lg shadow-lg hover:bg-primary hover:text-white">
+                                Quick Add
+                            </button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold text-[#1b0d12] dark:text-white group-hover:text-primary transition-colors">Daily SPF 50</h3>
+<span class="text-primary font-bold">$38.00</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-[18px] fill-1">star</span>
+<span class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">4.8 (200 reviews)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Philosophy / Feature Section -->
+<section class="bg-white dark:bg-[#2a151d] py-20">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<!-- Content -->
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<div class="space-y-4">
+<h2 class="text-3xl md:text-5xl font-bold text-[#1b0d12] dark:text-white leading-tight">
+                                The Philosophy of <br/> <span class="text-primary">Pure Beauty</span>
+</h2>
+<p class="text-lg text-[#5d2e3d] dark:text-[#e5d0d6] leading-relaxed max-w-xl">
+                                We believe in clean ingredients and transparent sourcing. Our formulas are designed to enhance your natural glow, not mask it. Every product is crafted with the highest standard of care for you and the planet.
+                            </p>
+</div>
+<div class="grid sm:grid-cols-3 gap-6">
+<div class="flex flex-col gap-3 p-4 rounded-lg bg-[#fcf8f9] dark:bg-[#221016] border border-[#f3e7eb] dark:border-[#3a2028]">
+<span class="material-symbols-outlined text-primary text-3xl">pets</span>
+<div>
+<h4 class="font-bold text-[#1b0d12] dark:text-white">Cruelty Free</h4>
+<p class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">Never tested on animals.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg bg-[#fcf8f9] dark:bg-[#221016] border border-[#f3e7eb] dark:border-[#3a2028]">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<div>
+<h4 class="font-bold text-[#1b0d12] dark:text-white">Vegan</h4>
+<p class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">100% plant-based.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg bg-[#fcf8f9] dark:bg-[#221016] border border-[#f3e7eb] dark:border-[#3a2028]">
+<span class="material-symbols-outlined text-primary text-3xl">recycling</span>
+<div>
+<h4 class="font-bold text-[#1b0d12] dark:text-white">Sustainable</h4>
+<p class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">Recyclable packaging.</p>
+</div>
+</div>
+</div>
+<button class="w-fit mt-4 px-8 py-3 rounded-lg border-2 border-[#1b0d12] dark:border-white text-[#1b0d12] dark:text-white font-bold hover:bg-[#1b0d12] hover:text-white dark:hover:bg-white dark:hover:text-[#1b0d12] transition-colors">
+                            Read Our Story
+                        </button>
+</div>
+<!-- Image -->
+<div class="relative order-1 lg:order-2 h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Artistic shot of various cosmetic creams and textures smeared on a glass surface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8MWyVljlLom0WcjlgVGSp-QwBmZ9viiIlIWyAm4tBYLobtQnD017HqFvFDxZX3-fWJcBIfPd4utG3Tsos0l5yogD7TnI7uGQbYeYRI9vScIK54A5sv197pd3oiV9xGa9Ym-vN3WJRR1Cbn6jyhsL1qQ5Hi8TZeaX3jxZ5N_GKsGcC2bWPiX0kuZ0fasJ69zw9-ix1hVmh5gznR1MH4kYh8z_DPz5NB__Pwv5tDIQXI9GoqK2mEkGP0jGe68sR4hNCi8NmW3JxLPDR");'>
+</div>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-20 bg-[#f3e7eb] dark:bg-[#221016]">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">mail</span>
+<h2 class="text-3xl font-bold text-[#1b0d12] dark:text-white mb-4">Join the Beauty Club</h2>
+<p class="text-[#5d2e3d] dark:text-[#e5d0d6] mb-8">
+                    Sign up for our newsletter to receive exclusive beauty tips, early access to new launches, and 15% off your first order.
+                </p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+<input class="flex-1 rounded-lg border-none py-3 px-4 focus:ring-2 focus:ring-primary text-[#1b0d12] shadow-sm" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg shadow-primary/20" type="button">
+                        Subscribe
+                    </button>
+</form>
+<p class="text-xs text-[#9a4c66] dark:text-[#cc8ba1] mt-4">
+                    By subscribing, you agree to our Terms of Service and Privacy Policy.
+                </p>
+</div>
+</section>
+<!-- Simple Footer -->
+<footer class="bg-white dark:bg-[#1a0c11] border-t border-[#f3e7eb] dark:border-[#3a2028] py-8">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<h2 class="text-xl font-bold tracking-tight text-[#1b0d12] dark:text-white">LUMIÈRE</h2>
+<span class="text-sm text-[#9a4c66] dark:text-[#cc8ba1]">© 2023</span>
+</div>
+<div class="flex gap-6 text-sm font-medium text-[#5d2e3d] dark:text-[#e5d0d6]">
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">TikTok</a>
+<a class="hover:text-primary" href="#">Pinterest</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
